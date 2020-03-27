@@ -1,0 +1,20 @@
+﻿<div>
+    <h1>
+        @Title
+    </h1>
+    <p>@message</p>
+    @ChildContent
+    <button @onclick="OnYes">Yes!</button>
+</div>
+
+@code {
+    [Parameter]
+    public string Title { get; set; }
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+    private string message;
+    private void OnYes()
+    {
+        message = "yes button was clicked!";
+    }
+}
