@@ -7,7 +7,7 @@ This is open source software to help people understand how $9,000 or more monthl
 •	Post resource types regarding grants used for copay assistance 
 
 # Overview 
-This is an open source software using a full stack framework to quickly create an environment to get resources for medicaiton costs. We will begin by using Iconic or Angular frameworks. The project begins by building backend API endpoints using MVP concepts and OOP principles. 
+This is an open source software using a full stack framework to quickly create an environment to get resources for medicaiton costs. We will begin by using Ionic or Angular frameworks. The project begins by building backend API endpoints using MVP concepts and OOP principles. 
 
 # Project Vision  
 To create a backend API to get resources for people on high dollar Medicare medications.
