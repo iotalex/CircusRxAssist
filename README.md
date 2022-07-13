@@ -3,6 +3,7 @@ This is open source software to help people understand how $9,000 or more monthl
 
 # The software supports the following user goals
 •	Help identify when manufacturer drug assistance will be needed
+
 •	Post resource types regarding grants used for copay assistance 
 
 # Overview 
