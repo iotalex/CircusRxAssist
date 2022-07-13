@@ -18,7 +18,8 @@ Like a trapeze artist on a balance beam at the circus, estimating medication cos
 AWP Drug cost values link: https://data.chhs.ca.gov/dataset/prescription-drug-wholesale-acquisition-cost-wac-increases/resource/351098ca-5a59-4461-9069-36c7dce4d0b0?view_id=864f5312-d7e8-484d-a39a-d689cceb030d
 
 # Parameters
-
+•	Help identify when manufacturer drug assistance will be needed
+•	Post resource types regarding grants used for copay assistance 
 • DrugManufacturerName
 • NPD (Drug Product Description)
 • AWP (Average Wholesale Cost Offer for Prescription)
