@@ -19,10 +19,10 @@ AWP Drug cost values link: https://data.chhs.ca.gov/dataset/prescription-drug-wh
 
 # Parameters
 
-DrugManufacturerName
-NPD (Drug Product Description)
-AWP (Average Wholesale Cost Offer for Prescription)
-IncomeLevel
-HouseHoldValue
-InsuranceType
+• DrugManufacturerName
+• NPD (Drug Product Description)
+• AWP (Average Wholesale Cost Offer for Prescription)
+• IncomeLevel
+• HouseHoldValue
+• InsuranceType
 
