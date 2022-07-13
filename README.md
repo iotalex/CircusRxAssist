@@ -7,7 +7,7 @@ This is open source software to help people understand how $9,000 or more monthl
 •	Post resource types regarding grants used for copay assistance 
 
 # Overview 
-This is an open source software using a full stack framework to quickly create an environment to get resources for medicaiton costs. We will begin by using Ionic or Angular frameworks. The project begins by building backend API endpoints using MVP concepts and OOP principles. 
+This is an open source software using a full stack framework to quickly create an environment to get Rx assistance/resources for medicaiton costs. We will begin by using Ionic framework using React. The project begins by building backend API endpoints using MVP concepts and OOP principles. 
 
 # Project Vision  
 To create a backend API to get resources for people on high dollar Medicare medications.
@@ -20,6 +20,10 @@ Like a trapeze artist on a balance beam at the circus, estimating medication cos
 • Restful API Drug Cost Resource: https://www.goodrx.com/developer/documentation
 
 • CSV File AWP Drug Cost Resource: https://data.chhs.ca.gov/dataset/prescription-drug-wholesale-acquisition-cost-wac-increases/resource/351098ca-5a59-4461-9069-36c7dce4d0b0?view_id=864f5312-d7e8-484d-a39a-d689cceb030d
+
+# Ionic/React
+
+• https://ionicframework.com/docs/developing/starting
 
 # Parameters
 

@@ -1,0 +1,7 @@
+{
+  "name": "CircusRxAssist",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
