@@ -22,14 +22,15 @@ AWP Drug cost values link: https://data.chhs.ca.gov/dataset/prescription-drug-wh
 
 
 # Parameters
-•	Help identify when manufacturer drug assistance will be needed
-
-•	Post resource types regarding grants used for copay assistance 
 
 • DrugManufacturerName
-• NPD (Drug Product Description)
-• AWP (Average Wholesale Cost Offer for Prescription)
-• IncomeLevel
-• HouseHoldValue
-• InsuranceType
 
+• NPD (Drug Product Description)
+
+• AWP (Average Wholesale Cost Offer for Prescription)
+
+• IncomeLevel
+
+• HouseHoldValue
+
+• InsuranceType
