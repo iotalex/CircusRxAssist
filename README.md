@@ -15,11 +15,11 @@ To create a backend API to get resources for people on high dollar Medicare medi
 # User story
 Like a trapeze artist on a balance beam at the circus, estimating medication costs on Medicare move in multiple directions quickly. Thus forcing a patient (user) to make quick financial decisions on thier financial path regarding medication costs.  
 
-# Rest API or CSV.file resource considerations
-AWP Drug cost values link: https://data.chhs.ca.gov/dataset/prescription-drug-wholesale-acquisition-cost-wac-increases/resource/351098ca-5a59-4461-9069-36c7dce4d0b0?view_id=864f5312-d7e8-484d-a39a-d689cceb030d
+# Rest API/CSV.files Resources
 
+• Restful API Drug Cost Resource: https://www.goodrx.com/developer/documentation
 
-
+• CSV File AWP Drug Cost Resource: https://data.chhs.ca.gov/dataset/prescription-drug-wholesale-acquisition-cost-wac-increases/resource/351098ca-5a59-4461-9069-36c7dce4d0b0?view_id=864f5312-d7e8-484d-a39a-d689cceb030d
 
 # Parameters
 
