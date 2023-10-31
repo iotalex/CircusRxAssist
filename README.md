@@ -38,3 +38,92 @@ Like a trapeze artist on a balance beam at the circus, estimating medication cos
 • HouseHoldValue
 
 • InsuranceType
+
+Roadmap:
+
+Setting Up the Environment:
+
+Use .NET 5 or .NET 6 (recommended for new projects).
+Create a new Web API project using the .NET CLI or Visual Studio.
+Data Models:
+
+Drug
+Patient
+Grant
+Notification
+Database:
+
+Use Entity Framework Core for database operations.
+Define relationships between models.
+Endpoints:
+
+CRUD operations for drugs, patients, and grants.
+An endpoint to retrieve a patient’s out-of-pocket costs.
+An endpoint to send notifications.
+Business Logic:
+
+Cost calculation engine.
+Notification engine.
+
+Business Logic: 
+public class CostCalculator
+{
+    public double CalculateOutOfPocketExpense(Drug drug)
+    {
+        if (drug.Cost > 9000)
+        {
+            return drug.Cost * 0.10;
+        }
+        return drug.Cost;
+    }
+
+    public bool ShouldNotify(Patient patient)
+    {
+        // Notify if close to or exceeds $6k
+        return patient.OutOfPocketExpenses >= 5000 && patient.OutOfPocketExpenses <= 6000;
+    }
+
+    public double DeductGrant(Patient patient, double expense)
+    {
+        // Deduct from grant if available
+        if (patient.Grants.Count > 0)
+        {
+            var grant = patient.Grants[0]; // assuming one grant for simplicity
+            if (grant.Amount > expense)
+            {
+                grant.Amount -= expense;
+                return 0;
+            }
+            else
+            {
+                expense -= grant.Amount;
+                grant.Amount = 0;
+            }
+        }
+        return expense;
+    }
+}
+
+Endpoint to retrieve patient's true out-of-pocket cost: 
+[HttpGet("GetOutofPocketExpense/{patientId}")]
+public IActionResult GetOutofPocketExpense(int patientId)
+{
+    var patient = _dbContext.Patients.Include(p => p.Grants).FirstOrDefault(p => p.Id == patientId);
+    if (patient == null)
+        return NotFound();
+
+    var costCalculator = new CostCalculator();
+    var expense = costCalculator.CalculateOutOfPocketExpense(/* Get drug details */);
+    expense = costCalculator.DeductGrant(patient, expense);
+    patient.OutOfPocketExpenses += expense;
+
+    _dbContext.SaveChanges();
+
+    if (costCalculator.ShouldNotify(patient))
+    {
+        // Send notification to patient's email
+    }
+
+    return Ok(patient.OutOfPocketExpenses);
+}
+
